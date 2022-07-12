@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Beach Sun - {% block titulo %}Home{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+      <header>
+        <nav>
+          <h2>Beach Sun!</h2>
+          <ul>
+            <li><a href="/">Menu</a></li>
+            <li><a href="https://integrador.talitamicheli.repl.co/entrar">Entrar</a></li>
+            <li><a href="/avaliacao">Nos avalie!</a></li>
+            <li><a href="/avaliacoes">Avaliações</a></li>
+            <li><a href="/contato">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Seja bem-vindo!</h1>
+        <p>Somos a melhor loja de biquínis de toda Natal - Zona Norte! Venha conhecer a nossa loja aqui.</p>
+        {% block container %}{% endblock %}
+      </main>
+    </body>  
+</html>

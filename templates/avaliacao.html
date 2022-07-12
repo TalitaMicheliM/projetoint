@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+  {% block titulo %}
+  Contato
+  {% endblock %}
+{% block container%}
+    <main style="justify-content: column; align-items: center;">
+     <h1 style="text-align: center; font-size: 50px; color: #fff">Já avaliou a gente?</h1>
+     <p style="text-align: center;">Deixe a sua avaliação</p>
+          <form action="/avaliacoes" method="post" style="text-align: center">
+            <br><label>Nome:</label>
+            <input type="text" name="nome"><br>
+            <label>Menssagem:</label>
+            <input type="text" name="mensagem"><br>
+        
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+{% endblock %}
